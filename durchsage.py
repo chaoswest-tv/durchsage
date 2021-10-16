@@ -163,7 +163,7 @@ def announce_event(fahrplan: str, event: dict, pre: bool = False) -> None:
     """
     Takes an event dict and announces it by sending it onto the configured MQTT topic.
     """
-    l.info("[%s] announcing event %s" % (fahrplan, event['guid']))
+    l.info("%s - announcing event %s" % (fahrplan, event['guid']))
 
     sub_topic = 'soon' if pre else 'now'
     msg = json.dumps(event)

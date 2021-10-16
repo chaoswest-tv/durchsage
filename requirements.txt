@@ -1,3 +1,4 @@
 apscheduler
+python-dateutil
 requests
 paho-mqtt
