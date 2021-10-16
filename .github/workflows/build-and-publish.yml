@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: ${{ github.ref == 'refs/heads/main' }}
-          tags: chaoswest-tv/durchsage:latest
+          tags: ghcr.io/chaoswest-tv/durchsage:latest
